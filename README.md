@@ -1,5 +1,5 @@
-# dvc-project-template
-DVC project template
+# MLflow-project-template
+MLflow project template
 
 ## STEPS -
 
@@ -10,7 +10,7 @@ DVC project template
 ### STEP 03- Create a conda environment after opening the repository in VSCODE
 
 ```bash
-conda create --prefix ./env python=3.7 -y
+conda create --prefix ./env python=3.8 -y
 ```
 
 ```bash
@@ -26,9 +26,10 @@ source activate ./env
 pip install -r requirements.txt
 ```
 
-### STEP 05- initialize the dvc project
+### STEP 05- Create conda.yaml file
 ```bash
-dvc init
+conda env export > conda.yaml
 ```
+
 
 ### STEP 06- commit and push the changes to the remote repository
